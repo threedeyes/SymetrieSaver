@@ -98,8 +98,7 @@ Symetrie::StartConfig(BView *view)
 	fSpeedSlider->ResizeToPreferred();
 	frame.top = fSpeedSlider->Frame().bottom+15;
 	
-	view->AddChild(new BStringView(frame, B_EMPTY_STRING, " Ver 0.1, (c) 2010 3dEyes**"));
-	
+	view->AddChild(new BStringView(frame, B_EMPTY_STRING, "(c) 2009 Jan Kadlec (Řrřola), (c) 2010-13 3dEyes**"));	
 }
 
 

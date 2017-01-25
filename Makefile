@@ -6,7 +6,7 @@ OBJS = Symetrie.o fbview.o Render.o
 all: SymetrieSaver
 
 SymetrieSaver: $(OBJS)
-	$(CC) -nostart -Xlinker -soname=SymetrieSaver -o SymetrieSaver $^ $(LIBS)
+	$(CC) -shared -Xlinker -soname=SymetrieSaver -o SymetrieSaver $^ $(LIBS)
 	xres -o SymetrieSaver SymetrieSaver.rsrc
 	
 .cpp.o:
